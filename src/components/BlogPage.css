@@ -1,22 +1,23 @@
 .blog-page {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   background-color: orange;
 }
 
 .blog-page-content {
-  position: relative;
-  top: 8rem;
-  left: 6rem;
+  align-self: center;
+  text-align: center;
   color: #fff;
 }
 
 .blog-page-content h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .blog-page-content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .blog-page-content p a {

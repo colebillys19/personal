@@ -18,7 +18,7 @@ class BlogPost extends Component {
     return (
       <div className="blog-post">
         <div className="blog-post-content">
-          <h1>blog post</h1>
+          <h1>post</h1>
           <p>blog post</p>
           <p>
             <Link to="/blog">back</Link>

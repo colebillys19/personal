@@ -18,7 +18,7 @@ class BlogPage extends Component {
     return (
       <div className="blog-page">
         <div className="blog-page-content">
-          <h1>blog page</h1>
+          <h1>blog</h1>
           <p>blog page</p>
           <p>
             <Link to="blog/1">go to a blog post</Link>

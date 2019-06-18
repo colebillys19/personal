@@ -7,7 +7,7 @@ class BlogSection extends Component {
     return (
       <div className="blog-section">
         <div className="blog-section-content">
-          <h1>blog section</h1>
+          <h1>blog</h1>
           <p>blog section</p>
           <p>
             <Link to="blog">go to blog page</Link>

@@ -6,7 +6,7 @@ class PortfolioSection extends Component {
     return (
       <div className="portfolio-section">
         <div className="portfolio-content">
-          <h1>portfolio section</h1>
+          <h1>portfolio</h1>
           <p>portfolio section</p>
         </div>
       </div>
