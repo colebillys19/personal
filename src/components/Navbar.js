@@ -4,6 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 import './Navbar.css';
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      burgerClicked: false
+    }
+  }
+  
 
   handleLandingClick = (e) => {
     if (this.props.onMainPage) {
@@ -55,6 +62,10 @@ class Navbar extends Component {
     }
   }
 
+  handleBurgerClick = (e) => {
+    this.setState({ burgerClicked: !this.state.burgerClicked });
+  }
+
   render() {
     return (
       <div className="navbar">
@@ -68,7 +79,10 @@ class Navbar extends Component {
           </Link>
         </div>
 
-        <ul className="nav-right">
+        <ul className={this.state.burgerClicked ?
+                       "nav-list burger-active" :
+                       "nav-list"}
+        >
           <li>
             <NavLink
               to="/#about"
@@ -110,11 +124,13 @@ class Navbar extends Component {
           </li>
 
         </ul>
-        <div className="burger">
+        <div
+          className={this.state.burgerClicked ? "burger active" : "burger"}
+          onClick={this.handleBurgerClick}
+        >
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
-
         </div>
 
       </div>

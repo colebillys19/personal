@@ -4,6 +4,10 @@ html {
   background-color: #000;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p {
   margin-top: 10px;
 }

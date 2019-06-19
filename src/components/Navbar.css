@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 62px;
   background-color: rgba(0, 0, 0, 0);
   z-index: 1;
 }
@@ -30,15 +30,27 @@ margin-left: -11px;
   color: #aaa;
 }
 
-.nav-right {
-  display: flex;
-  margin-right: 16px;
+.nav-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  padding-top: 60px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.85);
+  transform: translateX(-100%);
+  transition: transform 0.55s ease-in;
+}
+
+.nav-list li {
+  margin-bottom: 40px;
+  padding-right: 15px;
 }
 
 .nav-link {
-  margin-left: 16px;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #fff;
 }
 
@@ -52,12 +64,48 @@ margin-left: -11px;
 }
 
 .burger {
-  display: none;
+  margin-right: 16px;
+}
+
+.burger:hover {
+  cursor: pointer;
 }
 
 .burger div {
-  width: 25px;
+  width: 28px;
   height: 3px;
-  margin: 5px;
+  margin: 6px;
   background-color: #fff;
+  /* transition: all 0.3s ease; */
 }
+
+.burger-active {
+  transform: translateX(0%);
+}
+
+/******************************/
+
+/* @keyframes navLinkFadeIn {
+  from { opacity: 0; transform: translateX(-150px); }
+  to { opacity: 1; transform: translateX(0px); }
+}
+@keyframes navLinkFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+} */
+.active { position: relative; left: 1px; }
+.active .line1 { width: 32px; transform: rotate(-45deg) translate(-6.5px, 6.5px); }
+.active .line2 { opacity: 0; }
+.active .line3 { width: 32px; transform: rotate(45deg) translate(-6.5px, -6.5px); }
+
+/**************************************************/
+
+/* .nav-list {
+  display: flex;
+  margin-right: 16px;
+}
+
+.nav-link {
+  margin-right: 15px;
+  font-size: 1.2rem;
+} */
