@@ -2,13 +2,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  background-image: url("https://www.blastandcast.org/wp-content/uploads/2017/03/Grey-Wood-Background-10.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: calc(100vh + 20px);
+  background-color: darkorange;
 }
 
 .landing-content {
+  margin-top: -30px;
   align-self: center;
   text-align: center;
   color: #fff;

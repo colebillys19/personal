@@ -64,44 +64,59 @@ class Navbar extends Component {
             onClick={this.handleLandingClick}
             className=""
           >
-            BC
+            B<span>C</span>
           </Link>
         </div>
-        <div className="nav-right">
 
-          <NavLink
-            to="/#about"
-            onClick={this.handleAboutClick}
-            className="nav-link"
-          >
-            about
-          </NavLink>
+        <ul className="nav-right">
+          <li>
+            <NavLink
+              to="/#about"
+              onClick={this.handleAboutClick}
+              className="nav-link"
+            >
+              about
+            </NavLink>
+          </li>
 
-          <NavLink
-            to="/#portfolio"
-            onClick={this.handlePortfolioClick}
-            className="nav-link"
-          >
-            portfolio
-          </NavLink>
+          <li>
+            <NavLink
+              to="/#portfolio"
+              onClick={this.handlePortfolioClick}
+              className="nav-link"
+            >
+              portfolio
+            </NavLink>
+          </li>
 
-          <NavLink
-            to="#"
-            onClick={this.handleBlogClick}
-            className={ this.props.onMainPage ? "nav-link" : "nav-link muted" }
-          >
-            blog
-          </NavLink>
+          <li>
+            <NavLink
+              to="#"
+              onClick={this.handleBlogClick}
+              className={ this.props.onMainPage ? "nav-link" : "nav-link muted" }
+            >
+              blog
+            </NavLink>
+          </li>
 
-          <NavLink
-            to="/#contact"
-            onClick={this.handleContactClick}
-            className="nav-link"
-          >
-            contact
-          </NavLink>
+          <li>
+            <NavLink
+              to="/#contact"
+              onClick={this.handleContactClick}
+              className="nav-link"
+            >
+              contact
+            </NavLink>
+          </li>
+
+        </ul>
+        <div className="burger">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
 
         </div>
+
       </div>
     );
   }

@@ -24,7 +24,7 @@ class BlogPage extends Component {
             <Link to="blog/1">go to a blog post</Link>
           </p>
           <p>
-            <Link to="/">back to main page</Link>
+            <Link to="/#blog">back to main page</Link>
           </p>
         </div>
       </div>

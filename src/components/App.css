@@ -1,7 +1,9 @@
 html {
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'Asap Condensed', sans-serif;
+  letter-spacing: 3px;
   background-color: #000;
 }
 
-/* #a3bffc */
+p {
+  margin-top: 10px;
+}

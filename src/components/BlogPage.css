@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: orange;
+  background-color: darkorange;
 }
 
 .blog-page-content {
@@ -21,5 +21,6 @@
 }
 
 .blog-page-content p a {
+  color: royalblue;
   text-decoration: none;
 }
