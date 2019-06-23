@@ -15,11 +15,14 @@ class BlogPost extends Component {
   }
 
   render() {
+    const postNum = +this.props.match.url.slice(6) - 1;
+    const { title, date, body } = this.props.blogPosts[postNum]
     return (
       <div className="blog-post">
         <div className="blog-post-content">
-          <h1>post</h1>
-          <p>blog post</p>
+          <h1>{title}</h1>
+          <p>{date}</p>
+          <p>{body}</p>
           <p>
             <Link to="/blog">back</Link>
           </p>

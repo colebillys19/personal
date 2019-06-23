@@ -7,14 +7,14 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      burgerClicked: false
+      navExpanded: false
     }
   }
   
-
-  handleLandingClick = (e) => {
-    if (this.props.onMainPage) {
-      e.preventDefault();
+  handleLandingClick = () => {
+    this.setState({ navExpanded: false });
+    if (!this.props.onBlogPage) {
+      this.setState({ navExpanded: false });
       scroller.scrollTo("landing-section", {
         duration: 800,
         smooth: true
@@ -22,9 +22,10 @@ class Navbar extends Component {
     }
   }
 
-  handleAboutClick = (e) => {
-    if (this.props.onMainPage) {
-      e.preventDefault();
+  handleAboutClick = () => {
+    this.setState({ navExpanded: false });
+    if (!this.props.onBlogPage) {
+      this.setState({ navExpanded: false });
       scroller.scrollTo("about-section", {
         duration: 800,
         smooth: true
@@ -32,9 +33,9 @@ class Navbar extends Component {
     }
   }
 
-  handlePortfolioClick = (e) => {
-    if (this.props.onMainPage) {
-      e.preventDefault();
+  handlePortfolioClick = () => {
+    this.setState({ navExpanded: false });
+    if (!this.props.onBlogPage) {
       scroller.scrollTo("portfolio-section", {
         duration: 800,
         smooth: true
@@ -42,9 +43,9 @@ class Navbar extends Component {
     }
   }
 
-  handleBlogClick = (e) => {
-    if (this.props.onMainPage) {
-      e.preventDefault();
+  handleBlogClick = () => {
+    this.setState({ navExpanded: false });
+    if (!this.props.onBlogPage) {
       scroller.scrollTo("blog-section", {
         duration: 800,
         smooth: true
@@ -52,9 +53,9 @@ class Navbar extends Component {
     }
   }
 
-  handleContactClick = (e) => {
-    if (this.props.onMainPage) {
-      e.preventDefault();
+  handleContactClick = () => {
+    this.setState({ navExpanded: false });
+    if (!this.props.onBlogPage) {
       scroller.scrollTo("contact-section", {
         duration: 800,
         smooth: true
@@ -63,7 +64,7 @@ class Navbar extends Component {
   }
 
   handleBurgerClick = (e) => {
-    this.setState({ burgerClicked: !this.state.burgerClicked });
+    this.setState({ navExpanded: !this.state.navExpanded });
   }
 
   render() {
@@ -79,7 +80,7 @@ class Navbar extends Component {
           </Link>
         </div>
 
-        <ul className={this.state.burgerClicked ?
+        <ul className={this.state.navExpanded ?
                        "nav-list expanded" :
                        "nav-list"}
         >
@@ -105,9 +106,9 @@ class Navbar extends Component {
 
           <li>
             <NavLink
-              to="#"
+              to={this.props.onBlogPost ? "/blog" : "#"}
               onClick={this.handleBlogClick}
-              className={ this.props.onMainPage ? "nav-link" : "nav-link muted" }
+              className={ this.props.onBlogPage ? "nav-link muted" : "nav-link" }
             >
               blog
             </NavLink>
@@ -125,7 +126,7 @@ class Navbar extends Component {
 
         </ul>
         <div
-          className={this.state.burgerClicked ? "burger open" : "burger"}
+          className={this.state.navExpanded ? "burger open" : "burger"}
           onClick={this.handleBurgerClick}
         >
           <span></span>

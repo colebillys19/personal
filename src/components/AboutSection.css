@@ -2,14 +2,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: calc(100vh + 20px);
+  min-height: calc(100vh + 20px);
   background-color: royalblue;
 }
 
 .about-content {
-  margin-top: -30px;
-  align-self: center;
-  text-align: center;
+  padding: 30px 30px 50px;
   color: #fff;
 }
 
@@ -18,5 +16,7 @@
 }
 
 .about-content p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0px;
 }

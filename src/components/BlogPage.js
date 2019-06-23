@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './BlogPage.css';
 
 class BlogPage extends Component {
-
+  
   componentDidMount() {
     // call updateLocation to tell state whether on main page or blog
     // dictates navbar format
