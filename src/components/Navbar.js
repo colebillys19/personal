@@ -80,7 +80,7 @@ class Navbar extends Component {
         </div>
 
         <ul className={this.state.burgerClicked ?
-                       "nav-list burger-active" :
+                       "nav-list expanded" :
                        "nav-list"}
         >
           <li>
@@ -125,14 +125,15 @@ class Navbar extends Component {
 
         </ul>
         <div
-          className={this.state.burgerClicked ? "burger active" : "burger"}
+          className={this.state.burgerClicked ? "burger open" : "burger"}
           onClick={this.handleBurgerClick}
         >
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
+        
       </div>
     );
   }
