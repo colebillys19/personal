@@ -10,31 +10,26 @@ class Navbar extends Component {
       navExpanded: false
     }
   }
-  
+
   handleLandingClick = () => {
-    this.setState({ navExpanded: false });
     if (!this.props.onBlogPage) {
-      this.setState({ navExpanded: false });
       scroller.scrollTo("landing-section", {
         duration: 800,
         smooth: true
-      });    
+      });
     }
   }
 
   handleAboutClick = () => {
-    this.setState({ navExpanded: false });
     if (!this.props.onBlogPage) {
-      this.setState({ navExpanded: false });
       scroller.scrollTo("about-section", {
         duration: 800,
         smooth: true
-      });    
+      });
     }
   }
 
   handlePortfolioClick = () => {
-    this.setState({ navExpanded: false });
     if (!this.props.onBlogPage) {
       scroller.scrollTo("portfolio-section", {
         duration: 800,
@@ -44,7 +39,6 @@ class Navbar extends Component {
   }
 
   handleBlogClick = () => {
-    this.setState({ navExpanded: false });
     if (!this.props.onBlogPage) {
       scroller.scrollTo("blog-section", {
         duration: 800,
@@ -54,7 +48,6 @@ class Navbar extends Component {
   }
 
   handleContactClick = () => {
-    this.setState({ navExpanded: false });
     if (!this.props.onBlogPage) {
       scroller.scrollTo("contact-section", {
         duration: 800,
@@ -81,9 +74,10 @@ class Navbar extends Component {
         </div>
 
         <ul className={this.state.navExpanded ?
-                       "nav-list expanded" :
-                       "nav-list"}
+          "nav-list expanded" :
+          "nav-list"}
         >
+
           <li>
             <NavLink
               to="/#about"
@@ -106,9 +100,9 @@ class Navbar extends Component {
 
           <li>
             <NavLink
-              to={this.props.onBlogPost ? "/blog" : "#"}
+              to={this.props.onBlogPost ? "/blog" : "/#blog"}
               onClick={this.handleBlogClick}
-              className={ this.props.onBlogPage ? "nav-link muted" : "nav-link" }
+              className={this.props.onBlogPage ? "nav-link muted" : "nav-link"}
             >
               blog
             </NavLink>
@@ -134,7 +128,7 @@ class Navbar extends Component {
           <span></span>
           <span></span>
         </div>
-        
+
       </div>
     );
   }

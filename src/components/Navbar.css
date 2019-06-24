@@ -36,7 +36,7 @@ margin-left: -11px;
   left: 0;
   width: 200px;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 40px;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.85);
   transform: translateX(-100%);
@@ -48,7 +48,7 @@ margin-left: -11px;
 }
 
 .nav-list li {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-right: 15px;
 }
 
@@ -60,6 +60,10 @@ margin-left: -11px;
 
 .nav-link:hover {
   color: #ddd;
+}
+
+.nav-arrow {
+  width: 1.15rem;
 }
 
 .muted {

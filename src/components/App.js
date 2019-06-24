@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import MainPage from "./MainPage";
 import BlogPage from "./BlogPage";
 import BlogPost from "./BlogPost";
+import NotFound from "./NotFound";
 import './App.css';
 
 class App extends Component {
@@ -42,6 +43,10 @@ class App extends Component {
             exact
             path="/blog/:id"
             render={rtProps => <BlogPost {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />}
+          />
+          <Route
+            exact
+            render={() => <NotFound />}
           />
         </Switch>
       </div>

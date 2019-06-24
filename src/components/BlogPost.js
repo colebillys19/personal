@@ -21,11 +21,11 @@ class BlogPost extends Component {
       <div className="blog-post">
         <div className="blog-post-content">
           <h1>{title}</h1>
-          <p>{date}</p>
+          <div>{date}</div>
           <p>{body}</p>
-          <p>
-            <Link to="/blog">back</Link>
-          </p>
+          <div>
+            <Link to="/blog">blog page</Link>
+          </div>
         </div>
       </div>
     );

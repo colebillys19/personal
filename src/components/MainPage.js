@@ -43,7 +43,7 @@ class MainPage extends Component {
           <PortfolioSection />
         </Element>
         <Element name="blog-section">
-          <BlogSection />
+          <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
         </Element>
         <Element id="contact" name="contact-section">
           <ContactSection />
