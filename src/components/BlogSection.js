@@ -5,17 +5,9 @@ import arrowRight from '../img/arrow-right.svg';
 import './BlogSection.css';
 
 class BlogSection extends Component {
-
+  
   handlePostClick = (i) => {
     this.props.history.push(`blog/${i + 1}`);
-  }
-
-  handleMouseOver = (e) => {
-    e.target.style = { cursor: "pointer" }
-  }
-
-  handleMouseOut = (e) => {
-    e.target.style = { cursor: "default" }
   }
 
   render() {
@@ -26,8 +18,6 @@ class BlogSection extends Component {
           key={uuid()}
           className="blog-post-card"
           onClick={() => this.handlePostClick(i)}
-          onMouseOver={this.handleMouseOver}
-          onMouseOut={this.handleMouseOut}
         >
           <h3>{title}</h3>
           <p>{`${body.slice(0, 100)}...`}</p>

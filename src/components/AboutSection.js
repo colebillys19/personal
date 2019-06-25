@@ -18,12 +18,14 @@ class AboutSection extends Component {
             own music videos, and worked as an audio visual technician for
             large scale hotel events. Though I loved these experiences,
             eventually I began looking for a new adventure. This led me to the
-            world of web development and design. Since then I've been busy
-            learning everything I can about the field and its technologies. I
-            started with HTML, CSS, and Javascript - and lately I've moved on
-            to more advanced tech like Node, React, and Redux. I'm excited
-            about this path and everything it has to offer. My goal is to
-            become a full stack developer, specializing in UI + graphic design.
+            world of web development and design.
+            <br /><br />
+            Since then I've been busy learning everything I can about the field
+            and its technologies. I started with HTML, CSS, and Javascript -
+            and lately I've moved on to more advanced tech like Node, React,
+            and Redux. I'm excited about this path and everything it has to
+            offer. My goal is to become a full stack developer, specializing in
+            React + UI design.
           </p>
         </div>
       </div>
