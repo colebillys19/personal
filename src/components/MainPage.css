@@ -1,5 +1,4 @@
 .hr {
   border: 0;
-  height: 2px;
-  background-image: linear-gradient(to right, rgba(164, 189, 224, 0.3), rgba(128, 135, 191, 0.6), rgba(164, 189, 224, 0.3));
+  height: 4px;
 }

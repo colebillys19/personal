@@ -4,13 +4,13 @@
   align-items: flex-start;
   width: 100%;
   min-height: calc(100vh + 20px);
-  background-color: #f69d67;
+  background-color: #fdbf6c;
 }
 
 .about-section > header {
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #fdbf6c 0%,#f69d67 100%);
+  background: linear-gradient(to bottom, #f7a468 0%,#fdbf6c 100%);
 
 }
 
@@ -20,11 +20,15 @@
 }
 
 .about-content h1 {
+  margin-bottom: 15px;
   font-size: 2.5rem;
 }
 
 .about-content p {
-  font-size: 0.8rem;
+  padding-left: 10px;
+  font-size: 0.9rem;
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0px;
+  color: #4c59a6;
+  border-left: 4px solid #fff;
 }

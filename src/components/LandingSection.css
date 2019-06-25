@@ -10,13 +10,62 @@
   margin-top: -30px;
   align-self: center;
   text-align: center;
-  color: #fff;
 }
 
-.landing-content h1 {
-  font-size: 2.5rem;
+.name-flex {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 200px;
+  height: 200px;
+}
+
+.name-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.7rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.name-letter:nth-child(1) {
+  color: rgb(255, 255, 255);
+}
+
+.name-letter:nth-child(2) {
+  color: rgb(233, 234, 244);
+}
+
+.name-letter:nth-child(3) {
+  color: rgb(210, 214, 233);
+}
+
+.name-letter:nth-child(4) {
+  color: rgb(188, 193, 222);
+}
+
+.name-letter:nth-child(5) {
+  color: rgb(166, 172, 211);
+}
+
+.name-letter:nth-child(6) {
+  color: rgb(143, 151, 199);
+}
+
+.name-letter:nth-child(7) {
+  color: rgb(121, 131, 188);
+}
+
+.name-letter:nth-child(8) {
+  color: rgb(98, 110, 177);
+}
+
+.name-letter:nth-child(9) {
+  color: rgb(76, 89, 166);
 }
 
 .landing-content p {
   font-size: 1.5rem;
+  color: #fff;
 }
