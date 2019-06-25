@@ -22,6 +22,7 @@ class BlogSection extends Component {
     });
     return (
       <div className="blog-section">
+        <header></header>
         <div className="blog-section-content">
           <h1>blog</h1>
           <p>

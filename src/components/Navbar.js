@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll'
 import { Link, NavLink } from "react-router-dom";
+import logo from '../img/nav-logo-1.png'
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -69,7 +70,7 @@ class Navbar extends Component {
             onClick={this.handleLandingClick}
             className=""
           >
-            B<span>C</span>
+            <img src={logo} alt="nav-logo" />
           </Link>
         </div>
 

@@ -8,7 +8,7 @@ class BlogPage extends Component {
   componentDidMount() {
     // call updateLocation to tell state whether on main page or blog
     // dictates navbar format
-    this.props.updateLocation(this.props.location.pathname)
+    this.props.updateLocation(this.props.location.pathname);
   }
 
   componentDidUpdate() {

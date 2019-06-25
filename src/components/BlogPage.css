@@ -3,12 +3,12 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: darkorange;
+  background-color: #fdbf6c;
 }
 
 .blog-page-content {
   align-self: center;
-  padding: 62px 30px 50px;
+  padding: 90px 30px;
   text-align: center;
   color: #fff;
 }
@@ -29,7 +29,7 @@
 }
 
 .blog-page-content > p a {
-  color: royalblue;
+  color: #8087bf;
   text-decoration: none;
 }
 

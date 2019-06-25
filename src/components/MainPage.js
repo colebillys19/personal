@@ -13,7 +13,7 @@ class MainPage extends Component {
   componentDidMount() {
     // call updateLocation to tell state whether on main page or blog
     // dictates navbar format
-    this.props.updateLocation(this.props.location.pathname)
+    this.props.updateLocation(this.props.location.pathname);
   }
 
   componentDidUpdate() {
@@ -36,15 +36,19 @@ class MainPage extends Component {
         <Element id="landing" name="landing-section">
           <LandingSection />
         </Element>
+        <div className="hr"></div>
         <Element id="about" name="about-section">
           <AboutSection />
         </Element>
+        <div className="hr"></div>
         <Element id="portfolio" name="portfolio-section">
           <PortfolioSection />
         </Element>
+        <div className="hr"></div>
         <Element name="blog-section">
           <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
         </Element>
+        <div className="hr"></div>
         <Element id="contact" name="contact-section">
           <ContactSection />
         </Element>

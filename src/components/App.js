@@ -27,12 +27,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar onBlogPage={this.state.onBlogPage} onBlogPost={this.state.onBlogPost}/>
+        <Navbar
+          onBlogPage={this.state.onBlogPage}
+          onBlogPost={this.state.onBlogPost}
+          style={{ backgroundColor: window.scrollY > 100 ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0)" }}
+        />
         <Switch>
           <Route
             exact
             path="/"
-            render={rtProps => <MainPage {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts}/>}
+            render={rtProps => <MainPage {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />}
           />
           <Route
             exact

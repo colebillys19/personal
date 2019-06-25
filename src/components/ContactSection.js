@@ -5,6 +5,7 @@ class ContactSection extends Component {
   render() {
     return (
       <div className="contact-section">
+        <header></header>
         <div className="contact-content">
           <h1>contact</h1>
           <p>contact section</p>

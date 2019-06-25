@@ -1,13 +1,20 @@
 .blog-section {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   min-height: calc(100vh + 20px);
-  background-color: royalblue;
+  background-color: #f69d67;
+}
+
+.blog-section > header {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, #fdbf6c 0%,#f69d67 100%);
 }
 
 .blog-section-content {
-  padding: 30px 30px 50px;
+  padding: 30px 30px 90px;
   color: #fff;
 }
 
@@ -27,7 +34,7 @@
 }
 
 .blog-section-content p a {
-  color: darkorange;
+  color: #8087bf;
   text-decoration: none;
 }
 
