@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 52px;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
@@ -15,8 +15,8 @@
 
 .nav-left a img {
   position: relative;
-  top: 2px;
-  width: 120px;
+  top: 1px;
+  width: 100px;
 }
 
 .nav-left a:hover {
@@ -29,7 +29,7 @@
   left: 0;
   width: 200px;
   height: 100vh;
-  padding-top: 40px;
+  padding-top: 52px;
   text-align: right;
   background-color: rgba(0, 0, 0, 0.8);
   transform: translateX(-100%);
@@ -41,8 +41,13 @@
 }
 
 .nav-list li {
-  margin-bottom: 30px;
+  margin-bottom: 6vh;
   padding-right: 15px;
+}
+
+.nav-list li:nth-of-type(1) {
+  padding-top: 6vh;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-link {
@@ -65,7 +70,7 @@
 }
 
 .burger {
-  width: 36px;
+  width: 30px;
   height: 28px;
   position: relative;
   top: 2px;
@@ -78,7 +83,7 @@
 .burger span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: #fff;
   opacity: 1;
@@ -92,15 +97,15 @@
 }
 
 .burger span:nth-child(2), .burger span:nth-child(3) {
-  top: 10px;
+  top: 9px;
 }
 
 .burger span:nth-child(4) {
-  top: 20px;
+  top: 18px;
 }
 
 .burger.open span:nth-child(1) {
-  top: 10px;
+  top: 9px;
   width: 0%;
   left: 50%;
 }
@@ -114,7 +119,7 @@
 }
 
 .burger.open span:nth-child(4) {
-  top: 10px;
+  top: 9px;
   width: 0%;
   left: 50%;
 }

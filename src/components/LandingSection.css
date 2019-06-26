@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   height: calc(100vh + 20px);
-  background-color: #fdbf6c;
+  background: linear-gradient(to bottom, #f8ae6a 0%,#fdbf6c 100%);
 }
 
 .landing-content {
@@ -16,15 +16,16 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 10px;
 }
 
 .name-letter {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
@@ -66,6 +67,6 @@
 }
 
 .landing-content p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
 }
