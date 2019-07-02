@@ -41,14 +41,14 @@ class ContactSection extends Component {
               </a>
             </div>
             <div className="contact-item">
-              <i className="fab fa-stack-overflow"></i>
+              <i className="fab fa-twitter"></i>
               <a
-                href="https://stackoverflow.com/"
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src={arrowRight} alt="arrow-right" />
-                StackOverflow
+                Twitter
               </a>
             </div>
           </div>

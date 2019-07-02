@@ -25,7 +25,6 @@ class BlogPage extends Component {
       return (
         <div key={uuid()} className="blog-post-card" onClick={() => this.handlePostClick(i)}>
           <h3>{title}</h3>
-          <div>{date}</div>
           <p>{`${body.slice(0, 100)}...`}</p>
         </div>
       );

@@ -3,12 +3,22 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #f69d67;
+  background-color: #fdbf6c;
 }
 
 .blog-post-content {
   padding: 90px 30px;
   color: #fff;
+}
+
+.blog-post-content > a {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #8087bf;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0px;
 }
 
 .blog-post-content > h1 {
@@ -27,9 +37,3 @@
   letter-spacing: 0px;
 }
 
-.blog-post-content > div:last-of-type a {
-  margin-bottom: 40px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #8087bf;
-}
