@@ -4,13 +4,13 @@
   align-items: flex-start;
   width: 100%;
   min-height: calc(100vh + 20px);
-  background-color: #fdbf6c;
+  background-color: #f8ae6a;
 }
 
 .contact-section > header {
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #f8ae6a 0%,#fdbf6c 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%,#f8ae6a 100%);
 }
 
 .contact-content {
@@ -26,8 +26,8 @@
 .contact-content > div {
   padding-left: 10px;
   font-family: 'Times New Roman', Times, serif;
-  color: #4c59a6;
-  letter-spacing: 0px;
+  color: #434f9c;
+  letter-spacing: 1px;
   border-left: 4px solid #fff;
 }
 
@@ -44,9 +44,9 @@
 .contact-content .contact-item a {
   display: inline-flex;
   align-items: baseline;
-  color: #8087bf;
+  color: #6e78b4;
   text-decoration: none;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
 }
 
 .contact-content .contact-item img {

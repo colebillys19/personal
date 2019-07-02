@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   height: calc(100vh + 20px);
-  background: linear-gradient(to bottom, #f8ae6a 0%,#fdbf6c 100%);
+  background-color: #f8ae6a;
 }
 
 .landing-content {

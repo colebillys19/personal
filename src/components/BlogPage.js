@@ -21,7 +21,7 @@ class BlogPage extends Component {
 
   render() {
     const posts = this.props.blogPosts.map((post, i) => {
-      const { title, date, body } = post;
+      const { title, body } = post;
       return (
         <div key={uuid()} className="blog-post-card" onClick={() => this.handlePostClick(i)}>
           <h3>{title}</h3>
