@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import blogPosts from '../blogContent';
+import blogPosts from '../blogIndex';
 import Navbar from "./Navbar";
 import MainPage from "./MainPage";
 import BlogPage from "./BlogPage";

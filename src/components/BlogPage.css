@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #fdbf6c;
+  background-color: #f8ae6a;
 }
 
 .blog-page-content {
@@ -39,6 +39,7 @@
   margin-bottom: 15px;
   padding: 15px;
   letter-spacing: 1px;
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgba(0, 0, 0, 0.2);
   border: 4px solid #fff;
@@ -50,12 +51,14 @@
   margin-bottom: 5px;
 }
 
-.blog-page-content .blog-post-card div {
-  margin-bottom: 10px;
-}
-
 .blog-page-content .blog-post-card p {
   margin-bottom: 5px;
   font-family: 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 1px;
+}
+
+.blog-page-content .blog-post-card div {
+  margin-top: 10px;
+  font-size: 0.8rem;
 }

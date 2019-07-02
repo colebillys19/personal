@@ -15,17 +15,18 @@ class BlogPage extends Component {
     window.scrollTo(0, 0);
   }
 
-  handlePostClick = (i) => {
-    this.props.history.push(`blog/${i + 1}`);
+  handlePostClick = (id) => {
+    this.props.history.push(`blog/${id}`);
   }
 
   render() {
-    const posts = this.props.blogPosts.map((post, i) => {
-      const { title, body } = post;
+    const posts = this.props.blogPosts.map((post) => {
+      const { id, title, description, date } = post;
       return (
-        <div key={uuid()} className="blog-post-card" onClick={() => this.handlePostClick(i)}>
+        <div key={uuid()} className="blog-post-card" onClick={() => this.handlePostClick(id)}>
           <h3>{title}</h3>
-          <p>{`${body.slice(0, 100)}...`}</p>
+          <p>{description}</p>
+          <div>{date}</div>
         </div>
       );
     });

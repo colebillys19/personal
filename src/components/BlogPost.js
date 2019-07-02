@@ -1,13 +1,33 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import marked from 'marked';
 import './BlogPost.css';
 
 class BlogPost extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      markdown: null
+    }
+  }
+  
 
   componentDidMount() {
     // call updateLocation to tell state whether on main page or blog
     // dictates navbar format
     this.props.updateLocation(this.props.location.pathname);
+    // add spinner?
+    // grab markdown file and save to state
+    const postPath = require(`../blogPosts/${this.props.match.url.slice(6)}.md`);
+    fetch(postPath)
+    .then(response => {
+      return response.text()
+    })
+    .then(text => {
+      this.setState({
+        markdown: marked(text)
+      })
+    });
   }
   
   componentDidUpdate() {
@@ -15,8 +35,8 @@ class BlogPost extends Component {
   }
 
   render() {
-    const postNum = +this.props.match.url.slice(6) - 1;
-    const { title, date, body } = this.props.blogPosts[postNum]
+    const { markdown } = this.state;
+    const { title, date } = this.props.blogPosts.find(post => post.id === this.props.match.url.slice(6));
     return (
       <div className="blog-post">
         <div className="blog-post-content">
@@ -24,7 +44,7 @@ class BlogPost extends Component {
           <Link to="/#blog">main page</Link>
           <h1>{title}</h1>
           <div>{date}</div>
-          <p>{body}</p>
+          <article dangerouslySetInnerHTML={{__html: markdown}}></article>
         </div>
       </div>
     );
