@@ -10,11 +10,11 @@
 .contact-section > header {
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%,#f8ae6a 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
 }
 
 .contact-content {
-  padding: 30px 30px 90px;
+  padding: 30px 20px 90px;
   color: #fff;
 }
 
@@ -33,6 +33,7 @@
 
 .contact-content .contact-item {
   margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
 .contact-content > div i {
