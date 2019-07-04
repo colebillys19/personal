@@ -62,6 +62,7 @@ class Navbar extends Component {
   }
 
   render() {
+    const { onBlogPage, onBlogPost } = this.props;
     return (
       <div className="navbar">
         <div className="nav-left">
@@ -101,11 +102,11 @@ class Navbar extends Component {
 
           <li>
             <NavLink
-              to={this.props.onBlogPost ? "/blog" : "/#blog"}
+              to={onBlogPost ? "/blog" : "/#blog"}
               onClick={this.handleBlogClick}
-              className={this.props.onBlogPage ? "nav-link muted" : "nav-link"}
+              className={onBlogPage ? "nav-link muted" : "nav-link"}
             >
-              blog
+              { !onBlogPage && !onBlogPost ? "thoughts" : "blog" }
             </NavLink>
           </li>
 

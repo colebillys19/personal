@@ -20,7 +20,7 @@ class App extends Component {
   // keeps track of user's location in the app, for navbar logic
   updateLocation = (pathname) => {
     const onBlogPage = pathname === "/blog";
-    const onBlogPost = pathname.length > 5;
+    const onBlogPost = pathname.slice(0, 6) === "/blog/";
     this.setState({ onBlogPage, onBlogPost });
   }
 

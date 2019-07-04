@@ -33,15 +33,12 @@
   align-items: center;
   margin-bottom: 10px;
   color: #6e78b4;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-.blog-section-content p a img {
-  position: relative;
-  top: 1px;
-  width: 0.5rem;
+.blog-section-content p a i {
   margin-right: 5px;
 }
 
@@ -55,7 +52,7 @@
   margin-bottom: 15px;
   padding: 15px;
   letter-spacing: 1px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
   background-color: rgba(0, 0, 0, 0.2);
   border: 4px solid #fff;
   border-radius: 10px;
@@ -73,9 +70,11 @@
 
 .blog-section-content .blog-post-card p {
   margin-bottom: 5px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 1px;
+  font-size: 1.1rem;
+  line-height: 150%;
 }
 
 .blog-section-content .blog-post-card div {

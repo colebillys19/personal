@@ -35,7 +35,10 @@ class BlogPage extends Component {
         <div className="blog-page-content">
           <h1>blog</h1>
           <p>
-            <Link to="/#blog">back to main page</Link>
+            <Link to="/#blog">
+              <i class="fas fa-chevron-right"></i>
+              back to main page
+            </Link>
           </p>
           <h3>Posts</h3>
           {posts}

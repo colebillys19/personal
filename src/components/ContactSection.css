@@ -25,7 +25,7 @@
 
 .contact-content > div {
   padding-left: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
   color: #434f9c;
   letter-spacing: 1px;
   border-left: 4px solid #fff;
@@ -43,16 +43,16 @@
 }
 
 .contact-content .contact-item a {
-  display: inline-flex;
-  align-items: baseline;
+
   color: #6e78b4;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-.contact-content .contact-item img {
+.contact-content .contact-item a i {
   position: relative;
-  top: 1px;
-  width: 0.5rem;
+  bottom: 1px;
+  display: inline;
   margin-right: 5px;
+  font-size: 1rem;
 }

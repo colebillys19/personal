@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import uuid from 'uuid/v4';
-import arrowRight from '../img/arrow-right.svg';
 import './BlogSection.css';
 
 class BlogSection extends Component {
@@ -29,10 +28,10 @@ class BlogSection extends Component {
       <div className="blog-section">
         <header></header>
         <div className="blog-section-content">
-          <h1>blog</h1>
+          <h1>thoughts</h1>
           <p>
             <Link to="blog">
-              <img src={arrowRight} alt="arrow-right" />
+              <i className="fas fa-chevron-right"></i>
               go to blog page
             </Link>
           </p>

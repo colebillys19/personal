@@ -25,6 +25,11 @@ class AboutSection extends Component {
             <p>
               I took a few classes at a local community college and some courses online, but as I began to get a perspective on the field I decided the most productive use of my time was to enroll in a coding camp. I did my research and was lucky enough to find Rithm School in San Francisco, a smaller than average camp with a great staff of instructors. Now I'm back on the west coast, and as my time at Rithm comes to an end, I'm confident I have the skills necessary to succeed as a front end developer. I'm excited to meet folks working in the field, and to talk to potential employers about what I can bring to the table.
             </p>
+            <br/>
+            <div className="resume">
+              <i className="fas fa-chevron-right"></i>
+              download resume
+            </div>
           </div>
         </div>
       </div>

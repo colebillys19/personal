@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import arrowRight from '../img/arrow-right.svg';
 import './ContactSection.css';
 
 class ContactSection extends Component {
@@ -25,7 +24,7 @@ class ContactSection extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={arrowRight} alt="arrow-right" />
+                <i class="fas fa-chevron-right"></i>
                 LinkedIn
               </a>
             </div>
@@ -36,7 +35,7 @@ class ContactSection extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={arrowRight} alt="arrow-right" />
+                <i class="fas fa-chevron-right"></i>
                 GitHub
               </a>
             </div>
@@ -47,7 +46,7 @@ class ContactSection extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={arrowRight} alt="arrow-right" />
+                <i class="fas fa-chevron-right"></i>
                 Twitter
               </a>
             </div>
