@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll'
 import { Link, NavLink } from "react-router-dom";
-import logo from '../img/logo.svg'
+import logo from '../content/logo.svg'
 import './Navbar.css';
 
 class Navbar extends Component {

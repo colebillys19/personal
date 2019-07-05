@@ -10,7 +10,11 @@
 .blog-section > header {
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  background: #f8ae6a;
+  background: -moz-linear-gradient(top,  rgba(255, 255, 255, 0.12) 0%, #f8ae6a 100%);
+  background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.12)', endColorstr='#f8ae6a',GradientType=0 );
 }
 
 .blog-section-content {
@@ -49,6 +53,7 @@
 }
 
 .blog-section-content .blog-post-card {
+  max-width: 500px;
   margin-bottom: 15px;
   padding: 15px;
   letter-spacing: 1px;
@@ -74,10 +79,19 @@
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 1px;
   font-size: 1.1rem;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .blog-section-content .blog-post-card div {
   margin-top: 10px;
   font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 769px) {
+
+  .blog-section-content {
+    max-width: 800px;
+    margin: 0 50px;
+  }
+
 }

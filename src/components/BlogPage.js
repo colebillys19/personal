@@ -33,10 +33,10 @@ class BlogPage extends Component {
     return (
       <div className="blog-page">
         <div className="blog-page-content">
-          <h1>blog</h1>
+          <h1 className="main-header">blog</h1>
           <p>
             <Link to="/#blog">
-              <i class="fas fa-chevron-right"></i>
+              <i className="fas fa-chevron-right"></i>
               back to main page
             </Link>
           </p>

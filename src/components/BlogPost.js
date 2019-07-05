@@ -41,21 +41,27 @@ class BlogPost extends Component {
       <div className="blog-post">
         <div className="blog-post-content">
           <Link to="/blog">
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
             blog page
           </Link>
           <Link to="/#blog">
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
             main page
           </Link>
           <h1>{title}</h1>
           <div>by Billy Cole</div>
           <div>{date}</div>
           <article>
-            <ReactMarkdown
-              source={post}
-              renderers={{ code: CodeBlock }}
-            />
+            { !post ? (
+              <div className="spinner">
+                <i className="fas fa-spinner fa-spin"></i>
+              </div>
+            ) : (
+              <ReactMarkdown
+                source={post}
+                renderers={{ code: CodeBlock }}
+              />
+            ) }
           </article>
         </div>
       </div>

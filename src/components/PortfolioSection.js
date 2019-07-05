@@ -7,7 +7,7 @@ class PortfolioSection extends Component {
       <div className="portfolio-section">
         <header></header>
         <div className="portfolio-content">
-          <h1>portfolio</h1>
+          <h1 className="main-header">portfolio</h1>
           <h3>GIFsmos</h3>
           <div>
             <img src="https://ycamp.org/wp-content/uploads/2016/08/ock-image-placeholder.png" alt="portfolio" />

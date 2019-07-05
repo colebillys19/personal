@@ -28,7 +28,7 @@ class BlogSection extends Component {
       <div className="blog-section">
         <header></header>
         <div className="blog-section-content">
-          <h1>thoughts</h1>
+          <h1 className="main-header">thoughts</h1>
           <p>
             <Link to="blog">
               <i className="fas fa-chevron-right"></i>

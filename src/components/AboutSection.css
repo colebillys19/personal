@@ -10,7 +10,12 @@
 .about-section > header {
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  background: #f8ae6a;
+  background: -moz-linear-gradient(top,  rgba(255, 255, 255, 0.12) 0%, #f8ae6a 100%);
+  background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.12) 0%,#f8ae6a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.12)', endColorstr='#f8ae6a',GradientType=0 );
+
 }
 
 .about-content {
@@ -25,7 +30,11 @@
 
 .about-content img {
   width: 60vw;
+  min-width: 220px;
+  max-width: 360px;
   margin-bottom: 20px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   border-radius: 15px;
 }
 
@@ -34,7 +43,7 @@
   font-family: 'Lora', serif;
   letter-spacing: 1px;
   font-size: 1.1rem;
-  line-height: 150%;
+  line-height: 160%;
   color: #434f9c;
   border-left: 4px solid #fff;
 }
@@ -42,8 +51,24 @@
 .resume {
   font-size: 1.2rem;
   color: #6e78b4;
+  text-decoration: none;
 }
 
 .resume i {
   margin-right: 5px;
+}
+
+@media only screen and (min-width: 769px) {
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+  
+
 }

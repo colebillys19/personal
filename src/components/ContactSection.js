@@ -7,7 +7,7 @@ class ContactSection extends Component {
       <div className="contact-section">
         <header></header>
         <div className="contact-content">
-          <h1>contact</h1>
+          <h1 className="main-header">contact</h1>
           <div>
             <div className="contact-item">
               <i className="fas fa-map-marker-alt"></i>
@@ -24,7 +24,7 @@ class ContactSection extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 LinkedIn
               </a>
             </div>
@@ -35,18 +35,18 @@ class ContactSection extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 GitHub
               </a>
             </div>
             <div className="contact-item">
               <i className="fab fa-twitter"></i>
               <a
-                href="https://twitter.com/"
+                href="https://twitter.com/colebillys19"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fas fa-chevron-right"></i>
+                <i className="fas fa-chevron-right"></i>
                 Twitter
               </a>
             </div>

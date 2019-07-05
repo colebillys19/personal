@@ -9,6 +9,7 @@
 .blog-page-content {
   align-self: center;
   padding: 90px 20px;
+  text-align: center;
   color: #fff;
 }
 
@@ -43,6 +44,7 @@
 }
 
 .blog-page-content .blog-post-card {
+  max-width: 500px;
   margin-bottom: 15px;
   padding: 15px;
   letter-spacing: 1px;
@@ -65,7 +67,7 @@
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 1px;
   font-size: 1.1rem;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 .blog-page-content .blog-post-card div {
