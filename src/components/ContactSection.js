@@ -3,10 +3,11 @@ import './ContactSection.css';
 
 class ContactSection extends Component {
   render() {
+    const { inView } = this.props;
     return (
-      <div className="contact-section">
+      <div className="section-holder">
         <header></header>
-        <div className="contact-content">
+        <div className={inView ? "contact-content visible" : "contact-content"}>
           <h1 className="main-header">contact</h1>
           <div>
             <div className="contact-item">

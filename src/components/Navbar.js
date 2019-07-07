@@ -12,6 +12,21 @@ class Navbar extends Component {
     }
   }
 
+  componentDidMount = () => {
+    this.checkViewport();
+    window.addEventListener("resize", this.checkViewport);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener("resize", this.checkViewport);
+  }
+
+  checkViewport = () => {
+    if (window.innerWidth >= 769) {
+      this.setState({ navExpanded: false });
+    }
+  }
+  
   handleLandingClick = () => {
     if (!this.props.onBlogPage) {
       scroller.scrollTo("landing-section", {
@@ -63,6 +78,7 @@ class Navbar extends Component {
 
   render() {
     const { onBlogPage, onBlogPost } = this.props;
+    const { navExpanded } = this.state;
     return (
       <div className="navbar">
         <div className="nav-left">
@@ -75,11 +91,8 @@ class Navbar extends Component {
           </Link>
         </div>
 
-        <ul className={this.state.navExpanded ?
-          "nav-list expanded" :
-          "nav-list"}
+        <ul className={ navExpanded ? "mobile-nav expanded" : "mobile-nav" }
         >
-
           <li>
             <NavLink
               to="/#about"
@@ -89,7 +102,6 @@ class Navbar extends Component {
               about
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="/#portfolio"
@@ -99,7 +111,6 @@ class Navbar extends Component {
               portfolio
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to={onBlogPost ? "/blog" : "/#blog"}
@@ -109,7 +120,6 @@ class Navbar extends Component {
               { !onBlogPage && !onBlogPost ? "thoughts" : "blog" }
             </NavLink>
           </li>
-
           <li>
             <NavLink
               to="/#contact"
@@ -119,8 +129,8 @@ class Navbar extends Component {
               contact
             </NavLink>
           </li>
-
         </ul>
+
         <div
           className={this.state.navExpanded ? "burger open" : "burger"}
           onClick={this.handleBurgerClick}
@@ -130,6 +140,46 @@ class Navbar extends Component {
           <span></span>
           <span></span>
         </div>
+
+        <ul className="desktop-nav"
+        >
+          <li>
+            <NavLink
+              to="/#about"
+              onClick={this.handleAboutClick}
+              className="nav-link"
+            >
+              about
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/#portfolio"
+              onClick={this.handlePortfolioClick}
+              className="nav-link"
+            >
+              portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to={onBlogPost ? "/blog" : "/#blog"}
+              onClick={this.handleBlogClick}
+              className={onBlogPage ? "nav-link muted" : "nav-link"}
+            >
+              { !onBlogPage && !onBlogPost ? "thoughts" : "blog" }
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/#contact"
+              onClick={this.handleContactClick}
+              className="nav-link"
+            >
+              contact
+            </NavLink>
+          </li>
+        </ul>
 
       </div>
     );

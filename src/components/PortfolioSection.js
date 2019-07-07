@@ -3,10 +3,11 @@ import './PortfolioSection.css';
 
 class PortfolioSection extends Component {
   render() {
+    const { inView } = this.props;
     return (
-      <div className="portfolio-section">
+      <div className="section-holder">
         <header></header>
-        <div className="portfolio-content">
+        <div className={inView ? "portfolio-content visible" : "portfolio-content"}>
           <h1 className="main-header">portfolio</h1>
           <h3>GIFsmos</h3>
           <div>

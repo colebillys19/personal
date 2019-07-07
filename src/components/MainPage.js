@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Element, scroller } from 'react-scroll'
+import InViewMonitor from 'react-inview-monitor';
 import LandingSection from "./LandingSection";
 import AboutSection from "./AboutSection";
 import PortfolioSection from "./PortfolioSection";
@@ -33,24 +34,45 @@ class MainPage extends Component {
   render() {
     return (
       <div>
+
         <Element id="landing" name="landing-section">
           <LandingSection />
         </Element>
         <div className="hr"></div>
+
         <Element id="about" name="about-section">
-          <AboutSection />
+              <InViewMonitor
+                childPropsInView={{inView: true}}
+              >
+                <AboutSection />
+              </InViewMonitor>
         </Element>
         <div className="hr"></div>
+
         <Element id="portfolio" name="portfolio-section">
-          <PortfolioSection />
+            <InViewMonitor
+              childPropsInView={{inView: true}}
+            >
+              <PortfolioSection />
+            </InViewMonitor>
         </Element>
         <div className="hr"></div>
-        <Element name="blog-section">
-          <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
+
+        <Element id="blog" name="blog-section">
+            <InViewMonitor
+              childPropsInView={{inView: true}}
+            >
+              <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
+            </InViewMonitor>
         </Element>
         <div className="hr"></div>
+
         <Element id="contact" name="contact-section">
-          <ContactSection />
+            <InViewMonitor
+              childPropsInView={{inView: true}}
+            >
+              <ContactSection />
+            </InViewMonitor>
         </Element>
         <Footer />
       </div>

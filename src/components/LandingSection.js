@@ -17,7 +17,7 @@ class LandingSection extends Component {
             <div className="name-letter">L</div>
             <div className="name-letter">E</div>
           </div>
-          <p>web developer</p>
+          <p>front end developer</p>
         </div>
       </div>
     );

@@ -10,7 +10,8 @@ class BlogSection extends Component {
   }
 
   render() {
-    const posts = this.props.blogPosts.map((post) => {
+    const { inView, blogPosts } = this.props;
+    const posts = blogPosts.map((post) => {
       const { id, title, description, date } = post;
       return (
         <div
@@ -25,9 +26,9 @@ class BlogSection extends Component {
       );
     });
     return (
-      <div className="blog-section">
+      <div className="section-holder">
         <header></header>
-        <div className="blog-section-content">
+        <div className={inView ? "blog-section-content visible" : "blog-section-content"}>
           <h1 className="main-header">thoughts</h1>
           <p>
             <Link to="blog">

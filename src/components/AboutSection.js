@@ -3,12 +3,12 @@ import './AboutSection.css';
 
 class AboutSection extends Component {
   render() {
+    const { inView } = this.props;
     return (
-      <div className="about-section">
+      <div className="section-holder">
         <header></header>
-        <div className="about-content">
+        <div className={inView ? "about-content visible" : "about-content"}>
           <h1 className="main-header">about</h1>
-          <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1562082279/headshot-bw.jpg" alt="headshot" />
           <div className="about-body">
             <p>
               I grew up with a passion for creativity. I spent countless hours working on art, taking photographs, and filming videos - but it wasn't until I discovered my love for music that I really hit my stride. As a teenager, all my free time went to writing, playing, and recording music. My friends and I would drive near and far to watch our favorite bands perform. This passion led me to pursue a career as an audio engineer.
@@ -37,6 +37,8 @@ class AboutSection extends Component {
             <p>
               Now I'm back on the west coast, and as my time at Rithm comes to an end, I'm confident I have the skills necessary to succeed as a front end developer. I'm excited to meet folks working in the field, and to talk to potential employers about what I can bring to the table.
             </p>
+            <br/>
+            <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1562082279/headshot-bw.jpg" alt="headshot" />
             <br/>
             <a
               className="resume"

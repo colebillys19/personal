@@ -41,11 +41,9 @@ class BlogPost extends Component {
       <div className="blog-post">
         <div className="blog-post-content">
           <Link to="/blog">
-            <i className="fas fa-chevron-right"></i>
             blog page
           </Link>
           <Link to="/#blog">
-            <i className="fas fa-chevron-right"></i>
             main page
           </Link>
           <h1>{title}</h1>
