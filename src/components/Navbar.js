@@ -28,7 +28,7 @@ class Navbar extends Component {
   }
   
   handleLandingClick = () => {
-    if (!this.props.onBlogPage) {
+    if (!this.props.onBlogPage && !this.props.onBlogPost) {
       scroller.scrollTo("landing-section", {
         duration: 800,
         smooth: true
@@ -37,7 +37,7 @@ class Navbar extends Component {
   }
 
   handleAboutClick = () => {
-    if (!this.props.onBlogPage) {
+    if (!this.props.onBlogPage && !this.props.onBlogPost) {
       scroller.scrollTo("about-section", {
         duration: 800,
         smooth: true
@@ -46,7 +46,7 @@ class Navbar extends Component {
   }
 
   handlePortfolioClick = () => {
-    if (!this.props.onBlogPage) {
+    if (!this.props.onBlogPage && !this.props.onBlogPost) {
       scroller.scrollTo("portfolio-section", {
         duration: 800,
         smooth: true
@@ -55,7 +55,7 @@ class Navbar extends Component {
   }
 
   handleBlogClick = () => {
-    if (!this.props.onBlogPage) {
+    if (!this.props.onBlogPage && !this.props.onBlogPost) {
       scroller.scrollTo("blog-section", {
         duration: 800,
         smooth: true
@@ -64,7 +64,7 @@ class Navbar extends Component {
   }
 
   handleContactClick = () => {
-    if (!this.props.onBlogPage) {
+    if (!this.props.onBlogPage && !this.props.onBlogPost) {
       scroller.scrollTo("contact-section", {
         duration: 800,
         smooth: true
