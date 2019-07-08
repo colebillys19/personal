@@ -11,10 +11,6 @@ class BlogPage extends Component {
     this.props.updateLocation(this.props.location.pathname);
   }
 
-  componentDidUpdate() {
-    window.scrollTo(0, 0);
-  }
-
   handlePostClick = (id) => {
     this.props.history.push(`blog/${id}`);
   }
@@ -35,7 +31,7 @@ class BlogPage extends Component {
         <div className="blog-page-content">
           <h1 className="main-header">blog</h1>
           <p>
-            <Link to="/#blog">
+            <Link to="/">
               back to main page
             </Link>
           </p>

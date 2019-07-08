@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Element, scroller } from 'react-scroll';
 import InViewMonitor from 'react-inview-monitor';
 import LandingSection from "./LandingSection";
 import AboutSection from "./AboutSection";
@@ -17,62 +16,34 @@ class MainPage extends Component {
     this.props.updateLocation(this.props.location.pathname);
   }
 
-  componentDidUpdate() {
-    // if user navigates to main page via blog, show appropriate section
-    if (this.props.location.hash) {
-      const section = this.props.location.hash.slice(1)
-      scroller.scrollTo(`${section}-section`, {
-        duration: 0
-      });
-    }
-    // otherwise, show landing
-    else {
-      window.scrollTo(0,0);
-    }
-  }
-
   render() {
     return (
       <div>
-        <Element id="landing" name="landing-section">
-          <LandingSection />
-        </Element>
+        <LandingSection />
         <div className="hr"></div>
 
-        <Element id="about" name="about-section">
-          <InViewMonitor
-            childPropsInView={{ inView: true }}
-          >
-            <AboutSection />
-          </InViewMonitor>
-        </Element>
+        <InViewMonitor childPropsInView={{ inView: true }}>
+          <AboutSection />
+        </InViewMonitor>
+
         <div className="hr"></div>
 
-        <Element id="portfolio" name="portfolio-section">
-          <InViewMonitor
-            childPropsInView={{ inView: true }}
-          >
-            <PortfolioSection />
-          </InViewMonitor>
-        </Element>
+        <InViewMonitor childPropsInView={{ inView: true }}>
+          <PortfolioSection />
+        </InViewMonitor>
+
         <div className="hr"></div>
 
-        <Element id="blog" name="blog-section">
-          <InViewMonitor
-            childPropsInView={{ inView: true }}
-          >
-            <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
-          </InViewMonitor>
-        </Element>
+        <InViewMonitor childPropsInView={{ inView: true }}>
+          <BlogSection history={this.props.history} blogPosts={this.props.blogPosts} />
+        </InViewMonitor>
+
         <div className="hr"></div>
 
-        <Element id="contact" name="contact-section">
-          <InViewMonitor
-            childPropsInView={{ inView: true }}
-          >
-            <ContactSection />
-          </InViewMonitor>
-        </Element>
+        <InViewMonitor childPropsInView={{ inView: true }}>
+          <ContactSection />
+        </InViewMonitor>
+
         <Footer />
       </div>
     );

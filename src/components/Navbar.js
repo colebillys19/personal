@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { scroller } from 'react-scroll'
 import { Link, NavLink } from "react-router-dom";
 import logo from '../content/logo.svg'
 import './Navbar.css';
@@ -27,51 +26,6 @@ class Navbar extends Component {
     }
   }
   
-  handleLandingClick = () => {
-    if (!this.props.onBlogPage && !this.props.onBlogPost) {
-      scroller.scrollTo("landing-section", {
-        duration: 800,
-        smooth: true
-      });
-    }
-  }
-
-  handleAboutClick = () => {
-    if (!this.props.onBlogPage && !this.props.onBlogPost) {
-      scroller.scrollTo("about-section", {
-        duration: 800,
-        smooth: true
-      });
-    }
-  }
-
-  handlePortfolioClick = () => {
-    if (!this.props.onBlogPage && !this.props.onBlogPost) {
-      scroller.scrollTo("portfolio-section", {
-        duration: 800,
-        smooth: true
-      });
-    }
-  }
-
-  handleBlogClick = () => {
-    if (!this.props.onBlogPage && !this.props.onBlogPost) {
-      scroller.scrollTo("blog-section", {
-        duration: 800,
-        smooth: true
-      });
-    }
-  }
-
-  handleContactClick = () => {
-    if (!this.props.onBlogPage && !this.props.onBlogPost) {
-      scroller.scrollTo("contact-section", {
-        duration: 800,
-        smooth: true
-      });
-    }
-  }
-
   handleBurgerClick = (e) => {
     this.setState({ navExpanded: !this.state.navExpanded });
   }
@@ -83,20 +37,15 @@ class Navbar extends Component {
       <div className="navbar">
         <div className="nav-left">
           <Link
-            to="/#landing"
-            onClick={this.handleLandingClick}
-            className=""
+            to="/"
           >
             <img src={logo} alt="nav-logo" />
           </Link>
         </div>
-
-        <ul className={ navExpanded ? "mobile-nav expanded" : "mobile-nav" }
-        >
+        <ul className={ navExpanded ? "mobile-nav expanded" : "mobile-nav" }>
           <li>
             <NavLink
-              to="/#about"
-              onClick={this.handleAboutClick}
+              to="/"
               className="nav-link"
             >
               about
@@ -104,8 +53,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to="/#portfolio"
-              onClick={this.handlePortfolioClick}
+              to="/"
               className="nav-link"
             >
               portfolio
@@ -113,8 +61,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to={onBlogPost ? "/blog" : "/#blog"}
-              onClick={this.handleBlogClick}
+              to={onBlogPost ? "/blog" : "/"}
               className={onBlogPage ? "nav-link muted" : "nav-link"}
             >
               { !onBlogPage && !onBlogPost ? "thoughts" : "blog" }
@@ -122,8 +69,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to="/#contact"
-              onClick={this.handleContactClick}
+              to="/"
               className="nav-link"
             >
               contact
@@ -141,11 +87,10 @@ class Navbar extends Component {
           <span></span>
         </div>
 
-        <ul className="desktop-nav"
-        >
+        <ul className="desktop-nav">
           <li>
             <NavLink
-              to="/#about"
+              to="/"
               onClick={this.handleAboutClick}
               className="nav-link"
             >
@@ -154,7 +99,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to="/#portfolio"
+              to="/"
               onClick={this.handlePortfolioClick}
               className="nav-link"
             >
@@ -163,7 +108,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to={onBlogPost ? "/blog" : "/#blog"}
+              to={onBlogPost ? "/blog" : "/"}
               onClick={this.handleBlogClick}
               className={onBlogPage ? "nav-link muted" : "nav-link"}
             >
@@ -172,7 +117,7 @@ class Navbar extends Component {
           </li>
           <li>
             <NavLink
-              to="/#contact"
+              to="/"
               onClick={this.handleContactClick}
               className="nav-link"
             >

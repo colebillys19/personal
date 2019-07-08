@@ -17,7 +17,7 @@ class App extends Component {
     }
   }
 
-  // keeps track of user's location in the app, for navbar logic
+  // keeps track of user's location, for navbar views
   updateLocation = (pathname) => {
     const onBlogPage = pathname === "/blog";
     const onBlogPost = pathname.slice(0, 6) === "/blog/";
@@ -30,7 +30,6 @@ class App extends Component {
         <Navbar
           onBlogPage={this.state.onBlogPage}
           onBlogPost={this.state.onBlogPost}
-          style={{ backgroundColor: window.scrollY > 100 ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0)" }}
         />
         <Switch>
           <Route

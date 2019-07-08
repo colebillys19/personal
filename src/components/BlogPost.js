@@ -30,10 +30,6 @@ class BlogPost extends Component {
       });
   }
 
-  componentDidUpdate() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     const { post } = this.state;
     const { title, date } = this.props.blogPosts.find(post => post.id === this.props.match.url.slice(6));
@@ -43,7 +39,7 @@ class BlogPost extends Component {
           <Link to="/blog">
             blog page
           </Link>
-          <Link to="/#blog">
+          <Link to="/">
             main page
           </Link>
           <h1>{title}</h1>

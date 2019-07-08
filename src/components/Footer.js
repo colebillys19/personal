@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import { scroller } from 'react-scroll'
 import './Footer.css';
 
 class Footer extends Component {
-
-  handleUpClick = () => {
-    scroller.scrollTo("landing-section", {
-      duration: 800,
-      smooth: true
-    });
-  }
 
   render() {
     return (
