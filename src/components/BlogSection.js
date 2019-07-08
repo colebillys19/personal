@@ -31,7 +31,7 @@ class BlogSection extends Component {
         <div className={inView ? "blog-section-content visible" : "blog-section-content"}>
           <h1 className="main-header">thoughts</h1>
           <p>
-            <Link to="blog">
+            <Link to="/blog">
               <i className="fas fa-chevron-right"></i>
               go to blog page
             </Link>

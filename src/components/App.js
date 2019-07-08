@@ -40,12 +40,16 @@ class App extends Component {
           <Route
             exact
             path="/blog"
-            render={rtProps => <BlogPage {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />}
+            render={rtProps => (
+              <BlogPage {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />
+            )}
           />
           <Route
             exact
             path="/blog/:id"
-            render={rtProps => <BlogPost {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />}
+            render={rtProps => (
+              <BlogPost {...rtProps} updateLocation={this.updateLocation} blogPosts={blogPosts} />
+            )}
           />
           <Route
             exact
