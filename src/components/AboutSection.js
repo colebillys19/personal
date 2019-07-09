@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import { saveAs } from 'file-saver';
+import resume from '../content/resume.pdf';
 import './AboutSection.css';
 
 class AboutSection extends Component {
+
+  getResume = () => {
+    saveAs(resume, "BillyColeResume.pdf");
+  }
+
   render() {
     const { inView } = this.props;
     return (
@@ -40,15 +47,10 @@ class AboutSection extends Component {
             <br/>
             <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1562082279/headshot-bw.jpg" alt="headshot" />
             <br/>
-            <a
-              className="resume"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://res.cloudinary.com/dxklaorw6/image/upload/v1562361806/BillyColeResume.pdf"
-            >
+            <div className="resume" onClick={this.getResume}>
               <i className="fas fa-chevron-right"></i>
               get resume
-            </a>
+            </div>
           </div>
         </div>
       </div>

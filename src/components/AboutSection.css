@@ -36,9 +36,14 @@
 }
 
 .resume {
+  display: inline-block;
   font-size: 1.2rem;
   color: #6e78b4;
-  text-decoration: none;
+}
+
+.resume:hover {
+  color: #434f9c;
+  cursor: pointer;
 }
 
 .resume i {
@@ -55,11 +60,5 @@
   .about-body {
     font-size: 1.1rem;
   }
-
-}
-
-@media only screen and (min-width: 1025px) {
-
-  
 
 }

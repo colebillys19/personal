@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #888;
+  background-color: #f8ae6a;
 }
 
 .not-found-content {
@@ -13,5 +13,10 @@
 }
 
 .not-found-content h1 {
-  font-size: 2rem;
+  font-size: 5rem;
+  color: rgb(76, 89, 166);
+}
+
+.not-found-content h2 {
+  font-size: 1.6rem;
 }

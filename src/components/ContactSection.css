@@ -41,6 +41,10 @@
   letter-spacing: 1px;
 }
 
+.contact-content .contact-item a:hover {
+  color: #434f9c;
+}
+
 .contact-content .contact-item a i {
   position: relative;
   bottom: 1px;

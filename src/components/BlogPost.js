@@ -40,7 +40,7 @@ class BlogPost extends Component {
           <Link to="/blog">
             blog page
           </Link>
-          <Link to="/">
+          <Link to="/#blog">
             main page
           </Link>
           <h1>{title}</h1>

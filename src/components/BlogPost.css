@@ -22,6 +22,10 @@
   font-size: 1.2rem;
 }
 
+.blog-post-content > a:hover {
+  color: #434f9c;
+}
+
 .blog-post-content a i {
   margin-right: 5px;
 }
@@ -32,10 +36,15 @@
 }
 
 .blog-post-content > div {
+  display: inline-block;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #555;
+}
+
+.blog-post-content > div:last-of-type {
+  margin-left: 15px;
 }
 
 .blog-post-content .spinner {

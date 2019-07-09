@@ -7,13 +7,13 @@ const POSTS = [
   },
   {
     id: "blog-post-two",
-    title: "Blog Post Two",
+    title: "GIFsmos Reflection pt. 2",
     date: "06/30/19",
     description: "Eu lobortis elementum nibh tellus. Elementum pulvinar etiam non quam. Risus nec feugiat in fermentum posuere urna. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue."
   },
   {
     id: "blog-post-three",
-    title: "Blog Post Three",
+    title: "The Case for React Testing Library",
     date: "07/07/19",
     description: "Laoreet id donec ultrices tincidunt. Cursus in hac habitasse platea dictumst. Aenean et tortor at risus viverra adipiscing at in."
     }

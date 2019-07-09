@@ -6,7 +6,8 @@ class NotFound extends Component {
     return (
       <div className="not-found">
         <div className="not-found-content">
-          <h1>page not found</h1>
+          <h1 className="main-header">404</h1>
+          <h2>page not found</h2>
         </div>
       </div>
     );
