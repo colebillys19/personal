@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   height: calc(100vh + 20px);
-  background-color: #f8ae6a;
+  background-color: #d88261;
 }
 
 .landing-content {
@@ -34,35 +34,35 @@
 }
 
 .name-letter:nth-child(2) {
-  color: rgb(233, 234, 244);
+  color: rgb(229, 231, 233);
 }
 
 .name-letter:nth-child(3) {
-  color: rgb(210, 214, 233);
+  color: rgb(203, 207, 212);
 }
 
 .name-letter:nth-child(4) {
-  color: rgb(188, 193, 222);
+  color: rgb(177, 182, 190);
 }
 
 .name-letter:nth-child(5) {
-  color: rgb(166, 172, 211);
+  color: rgb(151, 158, 168);
 }
 
 .name-letter:nth-child(6) {
-  color: rgb(143, 151, 199);
+  color: rgb(125, 134, 146);
 }
 
 .name-letter:nth-child(7) {
-  color: rgb(121, 131, 188);
+  color: rgb(100, 110, 125);
 }
 
 .name-letter:nth-child(8) {
-  color: rgb(98, 110, 177);
+  color: rgb(74, 85, 103);
 }
 
 .name-letter:nth-child(9) {
-  color: rgb(76, 89, 166);
+  color: rgb(48, 61, 81);
 }
 
 .landing-content p {

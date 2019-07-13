@@ -5,7 +5,7 @@ class ContactSection extends Component {
   render() {
     const { inView } = this.props;
     return (
-      <div className="section-holder">
+      <div className="section-holder contact-holder">
         <header></header>
         <div className={inView ? "contact-content visible" : "contact-content"}>
           <h1 className="main-header">contact</h1>

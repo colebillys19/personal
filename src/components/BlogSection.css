@@ -1,6 +1,12 @@
+.blog-holder {
+  background-color: #303d51;
+}
+
+/* .blog-holder header {} */
+
 .blog-section-content {
   padding: 30px 20px 90px;
-  color: #fff;
+  color: #d88261;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 0.7s ease;
@@ -12,7 +18,6 @@
 }
 
 .blog-section-content > h1 {
-  margin-bottom: 10px;
   font-size: 2.5rem;
 }
 
@@ -23,16 +28,16 @@
 
 .blog-section-content p a {
   display: inline-flex;
+  margin-top: 5px;
   align-items: center;
-  margin-bottom: 10px;
-  color: #6e78b4;
+  color: #5d6be8;
   font-family: 'Lora', serif;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
 .blog-section-content p a:hover {
-  color: #434f9c;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -44,27 +49,36 @@
   margin-bottom: 15px;
   font-size: 1.4rem;
   letter-spacing: 2px;
+  color: #fff;
+}
+
+.posts-holder {
+  padding: 15px 0 0 20px;
+  border-left: 4px solid #d88261;
 }
 
 .blog-section-content .blog-post-card {
+  box-sizing: content-box;
   max-width: 500px;
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 0 15px 15px 0;
   letter-spacing: 1px;
   font-family: 'Lora', serif;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 4px solid #fff;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.blog-section-content .blog-post-card:hover {
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .blog-section-content .blog-post-card h3 {
   margin-bottom: 5px;
   font-size: 1.2rem;
+  color: #5d6be8;
+}
+
+.blog-section-content .blog-post-card h3 i {
+  margin-right: 5px;
+}
+
+.blog-section-content .blog-post-card h3:hover {
+  cursor: pointer;
+  color: #fff;
 }
 
 .blog-section-content .blog-post-card p {
@@ -78,17 +92,22 @@
 .blog-section-content .blog-post-card div {
   margin-top: 10px;
   font-size: 0.8rem;
+  color: #fff;
 }
 
 @media only screen and (min-width: 769px) {
 
   .blog-section-content {
     max-width: 800px;
-    margin: 0 50px;
+    margin: 0 100px;
   }
 
   .blog-section-content .blog-post-card p {
     font-size: 1.1rem;
+  }
+
+  .posts-holder {
+    padding-left: 30px;
   }
 
 }

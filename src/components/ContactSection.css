@@ -1,8 +1,17 @@
+
+.contact-holder {
+  background-color: #d88261;
+}
+
+/* .contact-holder header {} */
+
 .contact-content {
+  align-self: flex-end;
   padding: 30px 20px 90px;
-  color: #fff;
+  text-align: right;
+  color: #303d51;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(100px);
   transition: all 0.7s ease;
 }
 
@@ -12,21 +21,21 @@
 }
 
 .contact-content h1 {
-  margin-bottom: 15px;
   font-size: 2.5rem;
 }
 
 .contact-content > div {
-  padding-left: 20px;
+  padding: 15px 20px 5px 0;
   font-family: 'Lora', serif;
-  color: #434f9c;
+  color: #303d51;
   letter-spacing: 1px;
-  border-left: 4px solid #fff;
+  border-right: 4px solid #303d51;
 }
 
 .contact-content .contact-item {
   margin-bottom: 20px;
   font-size: 1.2rem;
+  color: #fff;
 }
 
 .contact-content > div i {
@@ -36,13 +45,13 @@
 }
 
 .contact-content .contact-item a {
-  color: #6e78b4;
+  color: #5d6be8;
   text-decoration: none;
   letter-spacing: 1px;
 }
 
 .contact-content .contact-item a:hover {
-  color: #434f9c;
+  color: #fff;
 }
 
 .contact-content .contact-item a i {
@@ -57,7 +66,11 @@
 
   .contact-content {
     max-width: 800px;
-    margin: 0 50px;
+    margin: 0 100px;
+  }
+
+  .contact-content > div {
+    padding-right: 30px;
   }
 
 }

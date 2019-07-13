@@ -1,8 +1,17 @@
+
+.portfolio-holder {
+  background-color: #d88261;
+}
+
+/* .portfolio-holder header {} */
+
 .portfolio-content {
+  align-self: flex-end;
   padding: 30px 20px 90px;
-  color: #fff;
+  text-align: right;
+  color: #303d51;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(100px);
   transition: all 0.7s ease;
 }
 
@@ -16,34 +25,60 @@
 }
 
 .portfolio-content h3 {
-  margin: 15px 0;
+  margin-bottom: 15px;
   font-size: 1.4rem;
   letter-spacing: 2px;
+  color: #fff;
 }
 
-.portfolio-content div {
-  padding-left: 20px;
-  border-left: 4px solid #fff;
+.portfolio-content > div {
+  padding: 15px 20px 15px 0;
+  border-right: 4px solid #303d51;
 }
 
 .portfolio-content img {
-  width: 270px;
   margin-bottom: 8px;
-  border-radius: 15px;
+  border: 3px solid #fff;
 }
 
 .portfolio-content p {
+  margin-bottom: 5px;
   font-family: 'Lora', serif;
   letter-spacing: 1px;
   line-height: 160%;
-  color: #434f9c;
+  color: #fff;
+}
+
+.portfolio-content a {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #5d6be8;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.portfolio-content a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolio-content a i {
+  margin-right: 5px;
+}
+
+.spacer {
+  height: 25px;
 }
 
 @media only screen and (min-width: 769px) {
 
   .portfolio-content {
     max-width: 800px;
-    margin: 0 50px;
+    margin: 0 100px;
+  }
+
+  .portfolio-content > div {
+    padding-right: 30px;
   }
 
   .portfolio-content p {

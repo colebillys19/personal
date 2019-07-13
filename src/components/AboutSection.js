@@ -12,7 +12,7 @@ class AboutSection extends Component {
   render() {
     const { inView } = this.props;
     return (
-      <div className="section-holder">
+      <div className="section-holder about-holder">
         <header></header>
         <div className={inView ? "about-content visible" : "about-content"}>
           <h1 className="main-header">about</h1>
@@ -49,7 +49,7 @@ class AboutSection extends Component {
             <br/>
             <div className="resume" onClick={this.getResume}>
               <i className="fas fa-chevron-right"></i>
-              get resume
+              download resume
             </div>
           </div>
         </div>

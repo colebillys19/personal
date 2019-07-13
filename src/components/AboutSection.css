@@ -1,6 +1,13 @@
+
+.about-holder {
+  background-color: #303d51;
+}
+
+/* .about-holder header {} */
+
 .about-content {
   padding: 30px 20px 90px;
-  color: #fff;
+  color: #d88261;
   opacity: 0;
   transform: translateX(-100px);
   transition: all 0.7s ease;
@@ -12,7 +19,6 @@
 }
 
 .about-content h1 {
-  margin-bottom: 15px;
   font-size: 2.5rem;
 }
 
@@ -27,22 +33,22 @@
 }
 
 .about-body {
-  padding-left: 20px;
+  padding: 15px 0 15px 20px;
   font-family: 'Lora', serif;
   letter-spacing: 1px;
   line-height: 160%;
-  color: #434f9c;
-  border-left: 4px solid #fff;
+  color: #fff;
+  border-left: 4px solid #d88261;
 }
 
 .resume {
   display: inline-block;
   font-size: 1.2rem;
-  color: #6e78b4;
+  color: #5d6be8;
 }
 
 .resume:hover {
-  color: #434f9c;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -54,10 +60,11 @@
 
   .about-content {
     max-width: 800px;
-    margin: 0 50px;
+    margin: 0 100px;
   }
 
   .about-body {
+    padding-left: 30px;
     font-size: 1.1rem;
   }
 

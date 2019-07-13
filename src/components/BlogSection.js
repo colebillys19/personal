@@ -17,27 +17,30 @@ class BlogSection extends Component {
         <div
           key={uuid()}
           className="blog-post-card"
-          onClick={() => this.handlePostClick(id)}
         >
-          <h3>{title}</h3>
+          <h3 onClick={() => this.handlePostClick(id)}>
+            <i className="fas fa-chevron-right"></i>
+            {title}
+          </h3>
           <p>{description}</p>
           <div>{date}</div>
         </div>
       );
     });
     return (
-      <div className="section-holder">
+      <div className="section-holder blog-holder">
         <header></header>
         <div className={inView ? "blog-section-content visible" : "blog-section-content"}>
           <h1 className="main-header">thoughts</h1>
+          <div className="posts-holder">
+            { posts }
+          </div>
           <p>
             <Link to="/blog">
               <i className="fas fa-chevron-right"></i>
               go to blog page
             </Link>
           </p>
-          <h3>Recent Posts</h3>
-          { posts }
         </div>
       </div>
     );

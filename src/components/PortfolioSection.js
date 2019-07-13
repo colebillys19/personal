@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import './PortfolioSection.css';
 
+
 class PortfolioSection extends Component {
   render() {
     const { inView } = this.props;
     return (
-      <div className="section-holder">
+      <div className="section-holder portfolio-holder">
         <header></header>
         <div className={inView ? "portfolio-content visible" : "portfolio-content"}>
           <h1 className="main-header">portfolio</h1>
-          <h3>GIFsmos</h3>
           <div>
-            <img src="https://ycamp.org/wp-content/uploads/2016/08/ock-image-placeholder.png" alt="portfolio" />
+            <h3>GIFsmos</h3>
+            <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1563056805/GF1.png" alt="portfolio" />
             <p>
               GIFsmos is an open source React/Redux application used to create
               animated GIF images via a Desmos graphing calculator. I worked as
@@ -21,10 +22,17 @@ class PortfolioSection extends Component {
               wrote robust tests using Jest and React Testing Library,
               increasing test coverage from 50% to 80%.
             </p>
-          </div>
-          <h3>Jobly</h3>
-          <div>
-            <img src="https://ycamp.org/wp-content/uploads/2016/08/ock-image-placeholder.png" alt="portfolio" />
+            <a
+              href="http://www.gifsmos.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-chevron-right"></i>
+              go to site
+            </a>
+            <div className="spacer"></div>
+            <h3>Jobly</h3>
+            <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1563056806/JY1.png" alt="portfolio" />
             <p>
               Jobly is a full stack job search application with a React front
               end, Node/Express back end API, and PostgreSQL database. When
@@ -35,10 +43,17 @@ class PortfolioSection extends Component {
               a pagination feature - allowing users to view listings page by
               page instead of all at once.
             </p>
-          </div>
-          <h3>VistaMaps</h3>
-          <div>
-            <img src="https://ycamp.org/wp-content/uploads/2016/08/ock-image-placeholder.png" alt="portfolio" />
+            <a
+              href="https://the-jobly-app.herokuapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-chevron-right"></i>
+              go to site
+            </a>
+            <div className="spacer"></div>
+            <h3>VistaMaps</h3>
+            <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1563056806/VM1.png" alt="portfolio" />
             <p>
               VistaMaps was my first web development project. It's a full stack
               application for sharing and finding photography locations. It
@@ -46,6 +61,14 @@ class PortfolioSection extends Component {
               database. The Google Maps API is used, allowing users to view the
               location of each vista on an interactive map.
             </p>
+            <a
+              href="http://vistamaps.herokuapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-chevron-right"></i>
+              go to site
+            </a>
           </div>
         </div>
       </div>

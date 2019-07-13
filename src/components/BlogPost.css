@@ -16,14 +16,14 @@
 .blog-post-content > a {
   display: block;
   margin-bottom: 10px;
-  color: #6e78b4;
+  color: #303d51;
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 1.2rem;
 }
 
 .blog-post-content > a:hover {
-  color: #434f9c;
+  color: #303d51;
 }
 
 .blog-post-content a i {
