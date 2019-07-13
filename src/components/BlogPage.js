@@ -32,7 +32,7 @@ class BlogPage extends Component {
         <div className="blog-page-content">
           <h1 className="main-header">blog</h1>
           <p>
-            <Link to="/">
+            <Link to="/#blog">
               back to main page
             </Link>
           </p>
