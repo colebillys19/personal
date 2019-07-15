@@ -26,7 +26,7 @@
   width: 60vw;
   min-width: 220px;
   max-width: 300px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   border-radius: 15px;
@@ -44,7 +44,7 @@
 .resume {
   display: inline-block;
   font-size: 1.2rem;
-  color: #5d6be8;
+  color: rgb(214, 230, 255);
 }
 
 .resume:hover {

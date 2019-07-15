@@ -15,7 +15,7 @@ class PortfolioSection extends Component {
             <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1563056805/GF1.png" alt="portfolio" />
             <p>
               GIFsmos is an open source React/Redux application used to create
-              animated GIF images via a Desmos graphing calculator. I worked as
+              animated GIF images via the Desmos graphing calculator. I worked as
               part of a team of developers making contributions to the project
               - making use of Agile methodology to maximize productivity. I
               added features, functionality, and design elements to the UI. I

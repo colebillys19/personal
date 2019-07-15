@@ -6,8 +6,8 @@
   height: 30px;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  color: #303d51;
-  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: #d88261;
   z-index: 1;
 }
 
@@ -16,11 +16,12 @@
   bottom: 1px;
   margin-left: 20px;
   font-size: 2rem;
+  color: rgb(214, 230, 255);
 }
 
 .footer i:hover {
   cursor: pointer;
-  color: #000;
+  color: #fff;
 }
 
 .footer span {

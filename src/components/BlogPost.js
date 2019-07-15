@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
 import './BlogPost.css';
@@ -37,15 +36,10 @@ class BlogPost extends Component {
     return (
       <div className="blog-post">
         <div className="blog-post-content">
-          <Link to="/blog">
-            blog page
-          </Link>
-          <Link to="/#blog">
-            main page
-          </Link>
           <h1>{title}</h1>
           <div>by Billy Cole</div>
           <div>{date}</div>
+          <hr/>
           <article>
             { !post ? (
               <div className="spinner">

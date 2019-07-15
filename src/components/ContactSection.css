@@ -3,8 +3,6 @@
   background-color: #d88261;
 }
 
-/* .contact-holder header {} */
-
 .contact-content {
   align-self: flex-end;
   padding: 30px 20px 90px;
@@ -45,7 +43,7 @@
 }
 
 .contact-content .contact-item a {
-  color: #5d6be8;
+  color: rgb(214, 230, 255);
   text-decoration: none;
   letter-spacing: 1px;
 }

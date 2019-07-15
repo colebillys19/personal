@@ -12,18 +12,19 @@ class BlogSection extends Component {
   render() {
     const { inView, blogPosts } = this.props;
     const posts = blogPosts.map((post) => {
-      const { id, title, description, date } = post;
+      const { id, title, description } = post;
       return (
         <div
           key={uuid()}
           className="blog-post-card"
         >
           <h3 onClick={() => this.handlePostClick(id)}>
-            <i className="fas fa-chevron-right"></i>
-            {title}
+            <span>
+              <i className="fas fa-chevron-right"></i>
+              {title}
+            </span>
           </h3>
           <p>{description}</p>
-          <div>{date}</div>
         </div>
       );
     });

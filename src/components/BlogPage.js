@@ -33,7 +33,8 @@ class BlogPage extends Component {
           <h1 className="main-header">blog</h1>
           <p>
             <Link to="/#blog">
-              back to main page
+              <i className="fas fa-chevron-right"></i>
+              main page
             </Link>
           </p>
           <h3>Posts</h3>

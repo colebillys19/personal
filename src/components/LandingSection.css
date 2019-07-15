@@ -34,11 +34,11 @@
 }
 
 .name-letter:nth-child(2) {
-  color: rgb(229, 231, 233);
+  color: rgb(214, 230, 255);
 }
 
 .name-letter:nth-child(3) {
-  color: rgb(203, 207, 212);
+  color: rgb(214, 230, 255);
 }
 
 .name-letter:nth-child(4) {
