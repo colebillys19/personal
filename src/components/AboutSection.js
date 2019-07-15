@@ -18,31 +18,23 @@ class AboutSection extends Component {
           <h1 className="main-header">about</h1>
           <div className="about-body">
             <p>
-              I grew up with a passion for creativity. I spent countless hours working on art, taking photographs, and filming videos - but it wasn't until I discovered my love for music that I really hit my stride. As a teenager, all my free time went to writing, playing, and recording music. My friends and I would drive near and far to watch our favorite bands perform. This passion led me to pursue a career as an audio engineer.
+              I grew up with a passion for creativity. Whether it was drawing, painting, taking photographs, or filming videos - I was always finding ways to be creative. As I got older this led to a love for writing and recording music, which in turn led me to pursue a career as an audio engineer.
             </p>
             <br/>
             <p>
-              I attended Full Sail University, where I earned a BA in Recording Arts and a Pro Tools Operator certificate. After school I worked as an intern for a commercial music and sound design house - then as a monitor engineer for a live music venue. Looking for a new adventure, I decided to move from my home state of Connecticut to Portland, Oregon and get involved with the city's eclectic music scene.
+              I earned a BA in Recording Arts at Full Sail University and went on to work a variety of jobs in studio, concert, and event settings. In my free time I played in bands and worked as a freelance recording engineer. On occasion, I acted as a creator director - using my ear and songwriting talents to help other musicians develop their sound. 
             </p>
             <br/>
             <p>
-              In Portland I formed and played in multiple bands, for whom I wrote, recorded, and mixed material. I did the same for other bands and musicians. I worked as an audio-visual technician in downtown Portland setting up and operating audio, lighting, and projection systems for large-scale hotel events. I made sure to take advantage of living in the Pacific Northwest by getting out of the city to explore whenever I had the chance - often bringing my camera along to shoot photos and videos.
+              Though I loved my experiences in music and audio, my enthusiasm started to waver as time passed. In my mid twenties I started exploring other career options. Around this time, a long time friend introduced me to coding. I took to it right away. Soon my interest in front end development turned into a passion and I decided to pursue it full time. I wanted to master UI/UX - and help improve the way people interact with technology.
             </p>
             <br/>
             <p>
-              Though I loved the experience my audio career provided, eventually I began seeking something new. Around this time I had a conversation with a long time friend about his job as a full stack software developer. I decided to try my hand at coding and took to it right away. As time passed I became more and more interested in writing code, specifically user interface design.
+              I started by taking some classes at a local community college, and then some courses online. Once I got a lay of the land I decided a code camp was the best use of my time. I explored my options and was lucky enough to find Rithm School in San Francisco, a small camp with a great staff of instructors.
             </p>
             <br/>
             <p>
-            As time passed, I noticed myself focusing more on development and less on audio. I found that I already had some skills necessary to excel as a front end developer: a good eye for design, the ability to collaborate creatively with others, and experience using technology for creative purposes. I made the decision to move back to Connecticut and pursue development full time.
-            </p>
-            <br/>
-            <p>
-              I took a few classes at a local community college and some courses online, but as I began to get a perspective on the field I decided the most productive use of my time was to enroll in a coding camp. I did my research and was lucky enough to find Rithm School in San Francisco, a smaller than average camp with a great staff of instructors.
-            </p>
-            <br/>
-            <p>
-              Now I'm back on the west coast, and as my time at Rithm comes to an end, I'm confident I have the skills necessary to succeed as a front end developer. I'm excited to meet folks working in the field, and to talk to potential employers about what I can bring to the table.
+              As my time at Rithm comes to an end, I'm more than pleased with the progress I've made. I feel I'm ready to join a team and make a positive impact. I'm excited to meet folks working in the field, and to talk to potential employers about what I can bring to the table.
             </p>
             <br/>
             <img src="https://res.cloudinary.com/dxklaorw6/image/upload/v1562082279/headshot-bw.jpg" alt="headshot" />

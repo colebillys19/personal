@@ -1,20 +1,26 @@
-
 .contact-holder {
   background-color: #d88261;
 }
 
 .contact-content {
+  -ms-flex-item-align: end;
   align-self: flex-end;
-  padding: 30px 20px 90px;
-  text-align: right;
   color: #303d51;
   opacity: 0;
+  padding: 30px 20px 90px;
+  text-align: right;
+  -webkit-transform: translateX(100px);
+  -ms-transform: translateX(100px);
   transform: translateX(100px);
-  transition: all 0.7s ease;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 .visible {
   opacity: 1;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
   transform: translateX(0px);
 }
 
@@ -22,30 +28,30 @@
   font-size: 2.5rem;
 }
 
-.contact-content > div {
-  padding: 15px 20px 5px 0;
-  font-family: 'Lora', serif;
-  color: #303d51;
-  letter-spacing: 1px;
+.contact-content>div {
   border-right: 4px solid #303d51;
+  color: #303d51;
+  font-family: Lora, serif;
+  letter-spacing: 1px;
+  padding: 15px 20px 5px 0;
 }
 
 .contact-content .contact-item {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
   color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
-.contact-content > div i {
+.contact-content>div i {
   display: block;
-  margin-bottom: 5px;
   font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .contact-content .contact-item a {
   color: rgb(214, 230, 255);
-  text-decoration: none;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .contact-content .contact-item a:hover {
@@ -53,22 +59,22 @@
 }
 
 .contact-content .contact-item a i {
-  position: relative;
   bottom: 1px;
   display: inline;
-  margin-right: 5px;
   font-size: 1rem;
+  margin-right: 5px;
+  position: relative;
 }
 
 @media only screen and (min-width: 769px) {
 
   .contact-content {
-    max-width: 800px;
     margin: 0 100px;
+    max-width: 80%;
   }
 
-  .contact-content > div {
+  .contact-content>div {
     padding-right: 30px;
   }
-
+  
 }

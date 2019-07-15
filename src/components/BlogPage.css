@@ -1,46 +1,56 @@
 .blog-page {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  min-height: 100vh;
   background-color: #d88261;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .blog-page-content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
+  color: #fff;
   padding: 90px 20px;
   text-align: center;
-  color: #fff;
 }
 
-.blog-page-content > h1 {
-  margin-bottom: 10px;
-  font-size: 2.5rem;
+.blog-page-content>h1 {
   color: #303d51;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.blog-page-content > p {
-  margin-bottom: 5px;
+.blog-page-content>p {
   font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
-.blog-page-content > h3 {
-  margin-bottom: 15px;
+.blog-page-content>h3 {
   font-size: 1.4rem;
   letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
-.blog-page-content > p a {
-  display: inline-flex;
+.blog-page-content>p a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 8px;
   color: rgb(214, 230, 255);
-  font-family: 'Lora', serif;
-  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: Lora, serif;
   letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-decoration: none;
 }
 
-.blog-page-content > p a:hover {
+.blog-page-content>p a:hover {
   color: #fff;
   cursor: pointer;
 }
@@ -50,17 +60,18 @@
 }
 
 .blog-page-content .blog-post-card {
-  max-width: 500px;
-  margin-bottom: 20px;
-  padding: 20px;
-  letter-spacing: 1px;
-  text-align: left;
-  font-family: 'Lora', serif;
   background-color: #af6752;
   border: 2px solid #fff;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #a6604c;
   box-shadow: 5px 5px 10px #a6604c;
   cursor: pointer;
+  font-family: Lora, serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  padding: 20px;
+  text-align: left;
 }
 
 .blog-page-content .blog-post-card:hover {
@@ -68,25 +79,25 @@
 }
 
 .blog-page-content .blog-post-card h3 {
-  margin-bottom: 5px;
   font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 
 .blog-page-content .blog-post-card p {
-  margin-bottom: 5px;
-  font-family: 'Lora', serif;
   color: #ddbfb8;
+  font-family: Lora, serif;
   letter-spacing: 1px;
   line-height: 160%;
+  margin-bottom: 5px;
 }
 
 .blog-page-content .blog-post-card div {
+  font-size: .8rem;
   margin-top: 10px;
-  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 769px) {
-
+  
   .blog-page-content .blog-post-card p {
     font-size: 1.1rem;
   }

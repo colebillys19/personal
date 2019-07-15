@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import uuid from 'uuid/v4';
 import './BlogPage.css';
 
@@ -31,12 +30,6 @@ class BlogPage extends Component {
       <div className="blog-page">
         <div className="blog-page-content">
           <h1 className="main-header">blog</h1>
-          <p>
-            <Link to="/#blog">
-              <i className="fas fa-chevron-right"></i>
-              main page
-            </Link>
-          </p>
           <h3>Posts</h3>
           {posts}
         </div>

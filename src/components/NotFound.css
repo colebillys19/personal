@@ -1,20 +1,26 @@
 .not-found {
+  background-color: #d88261;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  background-color: #d88261;
 }
 
 .not-found-content {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
-  text-align: center;
   color: #fff;
+  text-align: center;
 }
 
 .not-found-content h1 {
-  font-size: 5rem;
   color: rgb(76, 89, 166);
+  font-size: 5rem;
 }
 
 .not-found-content h2 {

@@ -17,7 +17,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <i className="fas fa-caret-up" onClick={this.handleUpClick}></i>
-        <span>&copy; Billy Cole 2019</span>
+        <span>Billy Cole <i className="fas fa-laptop"></i> 2019</span>
       </div>
     );
   }

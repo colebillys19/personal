@@ -1,20 +1,23 @@
-
 .about-holder {
   background-color: #303d51;
 }
 
-/* .about-holder header {} */
-
 .about-content {
-  padding: 30px 20px 90px;
   color: #d88261;
   opacity: 0;
+  padding: 30px 20px 90px;
+  -webkit-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
   transform: translateX(-100px);
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
 .visible {
   opacity: 1;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
   transform: translateX(0px);
 }
 
@@ -23,28 +26,26 @@
 }
 
 .about-content img {
-  width: 60vw;
-  min-width: 220px;
-  max-width: 300px;
-  margin-bottom: 12px;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
   border-radius: 15px;
+  margin-bottom: 12px;
+  max-width: 300px;
+  min-width: 220px;
+  width: 60vw;
 }
 
 .about-body {
-  padding: 15px 0 15px 20px;
-  font-family: 'Lora', serif;
+  border-left: 4px solid #d88261;
+  color: #fff;
+  font-family: Lora, serif;
   letter-spacing: 1px;
   line-height: 160%;
-  color: #fff;
-  border-left: 4px solid #d88261;
+  padding: 15px 0 15px 20px;
 }
 
 .resume {
+  color: rgb(214, 230, 255);
   display: inline-block;
   font-size: 1.2rem;
-  color: rgb(214, 230, 255);
 }
 
 .resume:hover {
@@ -59,13 +60,12 @@
 @media only screen and (min-width: 769px) {
 
   .about-content {
-    max-width: 800px;
     margin: 0 100px;
+    max-width: 80%;
   }
-
   .about-body {
-    padding-left: 30px;
     font-size: 1.1rem;
+    padding-left: 30px;
   }
-
+  
 }
