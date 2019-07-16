@@ -1,9 +1,9 @@
 const POSTS = [
   {
-    id: "blog-post-one",
-    title: "Blog Post One",
+    id: "gifsmos-1",
+    title: "GIFsmos Reflection pt. 1",
     date: "06/23/19",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    description: "Looking back at my time working on GIFsmos. I touch on how I got involved with the project, and what I worked on during the first week and a half."
   },
   {
     id: "blog-post-two",

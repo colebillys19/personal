@@ -3,7 +3,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Lora, serif;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -13,7 +12,7 @@
 }
 
 .blog-post-content {
-  padding: 95px 20px 90px;
+  padding: 95px 20px 30px;
   width: 100vw;
 }
 
@@ -54,7 +53,7 @@ hr {
 
 .blog-post-content article {
   left: -20px;
-  padding: 40px 20px 20px;
+  padding: 40px 20px 40px;
   position: relative;
   text-align: left;
   width: 100vw;
@@ -64,8 +63,12 @@ hr {
   font-size: 1rem;
   letter-spacing: 1px;
   line-height: 1.5em;
-  margin: 0 auto 15px;
+  margin: 0 auto 30px;
   max-width: 740px;
+}
+
+.blog-post-content article p:last-of-type {
+  margin-bottom: 0px;
 }
 
 .blog-post-content article pre {
@@ -79,13 +82,64 @@ hr {
 
 .blog-post-content article img {
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 370px;
+}
+
+.blog-post-content article em {
+  color: #555;
+}
+
+.blog-post-content article a {
+  color: #5a63e1;
+  text-decoration: none;
+}
+
+.blog-post-content article a:hover {
+  color: #0011ff;
+}
+
+.blog-post-content article ul {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  list-style: disc;
+  list-style-position: inside;
+  margin: 0 auto 30px;
+  max-width: 740px;
+}
+
+.blog-post-content>a {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #5a63e1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 40px 0;
+  text-decoration: none;
+}
+
+.blog-post-content>a:hover {
+  color: #0011ff;
+  cursor: pointer;
+}
+
+.blog-post-content>a i {
+  margin-right: 5px;
 }
 
 @media only screen and (min-width: 769px) {
 
   .blog-post-content article p {
+    font-size: 1.1rem;
+  }
+
+  .blog-post-content article ul {
     font-size: 1.1rem;
   }
   

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from "react-router-dom";
 import CodeBlock from './CodeBlock';
 import './BlogPost.css';
 
@@ -52,6 +53,11 @@ class BlogPost extends Component {
               />
             ) }
           </article>
+          <hr/>
+          <Link to="/blog">
+            <i className="fas fa-chevron-right"></i>
+            blog page
+          </Link>
         </div>
       </div>
     );
